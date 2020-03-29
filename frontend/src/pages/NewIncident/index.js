@@ -27,8 +27,6 @@ export default function NewIncident(){
             value,
         };
 
-        console.log(data);
-        console.log(ongId);
 
         try {
             await api.post('incidents', data, {
