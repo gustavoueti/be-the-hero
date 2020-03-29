@@ -19,13 +19,16 @@ export default function NewIncident(){
     const ongId = localStorage.getItem('ongId');
 
     async function handleNewIncident(e) {
-        e.prevetDefault();
+        e.preventDefault();
 
         const data = {
             title,
             description,
             value,
         };
+
+        console.log(data);
+        console.log(ongId);
 
         try {
             await api.post('incidents', data, {
@@ -72,7 +75,6 @@ export default function NewIncident(){
                         value={value}
                         onChange={e => setValue(e.target.value)}
                     />
-                    
 
                     <button className="button" type="submit"> Cadastrar</button>
                 </form>
