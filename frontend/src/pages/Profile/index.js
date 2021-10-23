@@ -54,11 +54,11 @@ export default function Profile() {
 
                 <Link className="button" to="/incidents/new">Cadastrar novo caso</Link>
                 <button onClick={handleLogout} type="button">
-                    <FiPower size={18} color="#E02041" />
+                    <FiPower size={18} color="#7B00D6" />
                 </button>
             </header>
 
-            <h1>Casos cadastrados</h1>
+            <h1 class="titleProfile">Casos cadastrados</h1>
 
             <ul>
                 {incidentes.map(incident => (
@@ -73,7 +73,7 @@ export default function Profile() {
                         <p>{Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(incident.value)}</p>
 
                         <button onClick={() => handleDeleteIncident(incident.id)} type="button">
-                            <FiTrash2 size={20} color="#a8a8b3" />
+                            <FiTrash2 size={20} color="#7B00D6" />
                         </button>
                 </li>
                 ))}
