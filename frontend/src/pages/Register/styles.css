@@ -53,3 +53,11 @@
 .register-container .content  form .input-group input + input {
     margin-left: 8px;
 }
+
+.titleRegister{
+    color: tomato;
+}
+
+.pRegister{
+    color:violet;
+}
