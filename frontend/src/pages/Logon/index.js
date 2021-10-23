@@ -35,7 +35,7 @@ export default function Logon() {
 
 
                 <form onSubmit={handleLogin}>
-                    <h1>Faça seu logon</h1>
+                    <h1 class="CTA">Faça seu logon</h1>
 
                     <input 
                         placeholder="Sua ID"
@@ -45,7 +45,7 @@ export default function Logon() {
                     <button className="button" type="submit">Entrar</button>
 
                     <Link className="back-link" to="/register">
-                        <FiLogIn size={16} color="#E02041" />
+                        <FiLogIn size={16} color="#7B00D6" />
                         Não tenho cadastro
                     </Link>
                 </form>
